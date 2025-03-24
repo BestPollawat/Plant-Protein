@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Protein - โปรตีนจากพืชเพื่อสุขภาพ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+        line-height: 1.8;
+      }
+      header {
+        background-color: #2d4739;
+        color: white;
+        padding: 30px 0;
+        text-align: center;
+      }
+      nav ul {
+        list-style: none;
+        padding: 10px 0;
+      }
+      nav ul li {
+        display: inline;
+        margin: 0 20px;
+      }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+      nav ul li a:hover {
+        color: #4caf50;
+      }
+      .hero {
+        background: url("https://tse1.mm.bing.net/th?id=OIP.lAHDLgYucI1PUDug7v-T-wHaHa&pid=Api") no-repeat center center/cover;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        position: relative;
+      }
+      .hero::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+      }
+      .hero .content {
+        position: relative;
+        z-index: 1;
+      }
+      .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+      .hero p {
+        font-size: 1.2rem;
+      }
+      section {
+        padding: 60px 20px;
+        max-width: 1000px;
+        margin: auto;
+      }
+      section h2 {
+        color: #2d4739;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        border-left: 5px solid #4caf50;
+        padding-left: 15px;
+      }
+      .products,
+      .features,
+      .blog,
+      .contact {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+      }
+      .card {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      .card img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
+      .card h3 {
+        color: #4caf50;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+      .card p {
+        font-size: 0.95rem;
+        color: #555;
+      }
+      .card .btn {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 16px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: background-color 0.3s;
+      }
+      .card .btn:hover {
+        background-color: #3c8c3c;
+      }
+      footer {
+        background: #2d4739;
+        color: white;
+        text-align: center;
+        padding: 20px 10px;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Plant Protein</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">เกี่ยวกับเรา</a></li>
+          <li><a href="#products">ผลิตภัณฑ์</a></li>
+          <li><a href="#benefits">จุดเด่น</a></li>
+          <li><a href="#blog">บทความ</a></li>
+          <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="content">
+        <h1>โปรตีนจากพืช เพื่อคุณและโลก</h1>
+        <p>เติมพลังจากธรรมชาติ สู่สุขภาพที่ยั่งยืน</p>
+      </div>
+    </div>
+
+    <section id="about">
+      <h2>เกี่ยวกับ Plant Protein</h2>
+      <p>
+        เราคือแบรนด์โปรตีนจากพืชที่เชื่อว่าความแข็งแรงของร่างกายต้องเริ่มจากภายใน
+        เราคัดสรรวัตถุดิบจากธรรมชาติ 100% เช่น ถั่วลันเตา ข้าวกล้อง
+        และเมล็ดฟักทอง ปราศจากน้ำตาลและสารปรุงแต่ง
+        เพื่อให้คุณได้รับโปรตีนคุณภาพสูง และยังสนับสนุนวิถีชีวิตที่เป็นมิตรกับสิ่งแวดล้อม
+      </p>
+    </section>
+
+    <section id="products">
+      <h2>ผลิตภัณฑ์ของเรา</h2>
+      <div class="products">
+        <div class="card">
+          <img src="https://tse4.mm.bing.net/th?id=OIP.vtEyR5Z1oTSnH6lJxBrzhgHaHa&pid=Api" alt="Pea Protein" />
+          <h3>Pea Protein</h3>
+          <p>โปรตีนถั่วลันเตาที่ให้กรดอะมิโนครบถ้วน เหมาะสำหรับผู้ที่ต้องการเสริมสร้างกล้ามเนื้อ</p>
+          <a class="btn" href="#">ดูเพิ่มเติม</a>
+        </div>
+        <div class="card">
+          <img src="https://tse2.mm.bing.net/th?id=OIP.u6EgYv4Qi6V3gu_ZTkCN-AHaHB&pid=Api" alt="Plant Protein" />
+          <h3>Plant Protein Blend</h3>
+          <p>รวมพลังจากพืช 5 ชนิด เพื่อสมดุลสารอาหารในทุกมื้อของคุณ</p>
+          <a class="btn" href="#">ดูเพิ่มเติม</a>
+        </div>
+        <div class="card">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.lAHDLgYucI1PUDug7v-T-wHaHa&pid=Api" alt="Organic Protein" />
+          <h3>Organic Protein</h3>
+          <p>ปลอดสารเคมี 100% ให้พลังงานสะอาดจากธรรมชาติอย่างแท้จริง</p>
+          <a class="btn" href="#">ดูเพิ่มเติม</a>
+        </div>
+    </section>
+
+    <section id="benefits">
+      <h2>ทำไมต้อง Plant Protein?</h2>
+      <div class="features">
+        <div class="card">
+          <h3>โปรตีนสูง</h3>
+          <p>ให้โปรตีนสูงถึง 20g ต่อช้อน เสริมสร้างกล้ามเนื้อและซ่อมแซมร่างกาย</p>
+        </div>
+        <div class="card">
+          <h3>ปราศจากนมและกลูเตน</h3>
+          <p>เหมาะสำหรับผู้แพ้อาหาร หรือผู้ที่เลือกทานแบบวีแกน</p>
+        </div>
+        <div class="card">
+          <h3>ไม่แต่งสีและกลิ่น</h3>
+          <p>ไม่มีวัตถุกันเสีย รสชาติธรรมชาติ ดื่มง่าย</p>
+        </div>
+        <div class="card">
+          <h3>ย่อยง่าย</h3>
+          <p>เหมาะกับระบบย่อยอาหารของทุกวัย ไม่มีอาการแน่นท้อง</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog">
+      <h2>บทความล่าสุด</h2>
+      <div class="blog">
+        <div class="card">
+          <h3>โปรตีนพืช vs โปรตีนสัตว์</h3>
+          <p>แตกต่างอย่างไร? อันไหนดีกว่าในระยะยาว? บทความนี้มีคำตอบ</p>
+        </div>
+        <div class="card">
+          <h3>5 สูตรสมูทตี้โปรตีนอร่อยสุดเฮลธ์ตี้</h3>
+          <p>ไม่ต้องเบื่อโปรตีนแบบเดิม ๆ ลองสูตรสมูทตี้นี้เลย!</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>ติดต่อเรา</h2>
+      <div class="contact">
+        <div class="card">
+          <h3>ที่อยู่</h3>
+          <p>123/45 ถนนสุขภาพดี แขวงสีเขียว เขตวีแกน กรุงเทพฯ 10200</p>
+        </div>
+        <div class="card">
+          <h3>อีเมล</h3>
+          <p>info@PlantProtein.com</p>
+        </div>
+        <div class="card">
+          <h3>เบอร์ติดต่อ</h3>
+          <p>02-123-4567</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Plant Protein. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
