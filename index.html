@@ -96,6 +96,7 @@
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease;
+        position: relative;
       }
       .card:hover {
         transform: translateY(-5px);
@@ -125,9 +126,19 @@
         text-decoration: none;
         font-size: 0.9rem;
         transition: background-color 0.3s;
+        cursor: pointer;
       }
       .card .btn:hover {
         background-color: #3c8c3c;
+      }
+      .nutrition {
+        display: none;
+        margin-top: 10px;
+        background: #f0f0f0;
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        color: #333;
       }
       footer {
         background: #2d4739;
@@ -137,6 +148,12 @@
         margin-top: 40px;
       }
     </style>
+    <script>
+      function toggleNutrition(id) {
+        const box = document.getElementById(id);
+        box.style.display = box.style.display === 'block' ? 'none' : 'block';
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -176,78 +193,34 @@
           <img src="https://tse4.mm.bing.net/th?id=OIP.vtEyR5Z1oTSnH6lJxBrzhgHaHa&pid=Api" alt="Pea Protein" />
           <h3>Pea Protein</h3>
           <p>โปรตีนถั่วลันเตาที่ให้กรดอะมิโนครบถ้วน เหมาะสำหรับผู้ที่ต้องการเสริมสร้างกล้ามเนื้อ</p>
-          <a class="btn" href="#">ดูเพิ่มเติม</a>
+          <button class="btn" onclick="toggleNutrition('nutri1')">ดูเพิ่มเติม</button>
+          <div class="nutrition" id="nutri1">
+            <p><strong>โปรตีน:</strong> 30g</p>
+            <p><strong>แคลอรี่:</strong> 180 kcal</p>
+            <p><strong>ส่วนผสม:</strong> ถั่วลันเตา, ข้าว, ฟักทอง</p>
+          </div>
         </div>
         <div class="card">
           <img src="https://tse2.mm.bing.net/th?id=OIP.u6EgYv4Qi6V3gu_ZTkCN-AHaHB&pid=Api" alt="Plant Protein" />
           <h3>Plant Protein Blend</h3>
           <p>รวมพลังจากพืช 5 ชนิด เพื่อสมดุลสารอาหารในทุกมื้อของคุณ</p>
-          <a class="btn" href="#">ดูเพิ่มเติม</a>
+          <button class="btn" onclick="toggleNutrition('nutri2')">ดูเพิ่มเติม</button>
+          <div class="nutrition" id="nutri2">
+            <p><strong>โปรตีน:</strong> 25g</p>
+            <p><strong>แคลอรี่:</strong> 160 kcal</p>
+            <p><strong>ส่วนผสม:</strong> ถั่วเหลือง, เมล็ดทานตะวัน, ข้าวกล้อง</p>
+          </div>
         </div>
         <div class="card">
           <img src="https://tse1.mm.bing.net/th?id=OIP.lAHDLgYucI1PUDug7v-T-wHaHa&pid=Api" alt="Organic Protein" />
           <h3>Organic Protein</h3>
           <p>ปลอดสารเคมี 100% ให้พลังงานสะอาดจากธรรมชาติอย่างแท้จริง</p>
-          <a class="btn" href="#">ดูเพิ่มเติม</a>
-        </div>
-    </section>
-
-    <section id="benefits">
-      <h2>ทำไมต้อง Plant Protein?</h2>
-      <div class="features">
-        <div class="card">
-          <h3>โปรตีนสูง</h3>
-          <p>ให้โปรตีนสูงถึง 20g ต่อช้อน เสริมสร้างกล้ามเนื้อและซ่อมแซมร่างกาย</p>
-        </div>
-        <div class="card">
-          <h3>ปราศจากนมและกลูเตน</h3>
-          <p>เหมาะสำหรับผู้แพ้อาหาร หรือผู้ที่เลือกทานแบบวีแกน</p>
-        </div>
-        <div class="card">
-          <h3>ไม่แต่งสีและกลิ่น</h3>
-          <p>ไม่มีวัตถุกันเสีย รสชาติธรรมชาติ ดื่มง่าย</p>
-        </div>
-        <div class="card">
-          <h3>ย่อยง่าย</h3>
-          <p>เหมาะกับระบบย่อยอาหารของทุกวัย ไม่มีอาการแน่นท้อง</p>
+          <button class="btn" onclick="toggleNutrition('nutri3')">ดูเพิ่มเติม</button>
+          <div class="nutrition" id="nutri3">
+            <p><strong>โปรตีน:</strong> 28g</p>
+            <p><strong>แคลอรี่:</strong> 170 kcal</p>
+            <p><strong>ส่วนผสม:</strong> วัตถุดิบออร์แกนิกล้วน</p>
+          </div>
         </div>
       </div>
     </section>
-
-    <section id="blog">
-      <h2>บทความล่าสุด</h2>
-      <div class="blog">
-        <div class="card">
-          <h3>โปรตีนพืช vs โปรตีนสัตว์</h3>
-          <p>แตกต่างอย่างไร? อันไหนดีกว่าในระยะยาว? บทความนี้มีคำตอบ</p>
-        </div>
-        <div class="card">
-          <h3>5 สูตรสมูทตี้โปรตีนอร่อยสุดเฮลธ์ตี้</h3>
-          <p>ไม่ต้องเบื่อโปรตีนแบบเดิม ๆ ลองสูตรสมูทตี้นี้เลย!</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>ติดต่อเรา</h2>
-      <div class="contact">
-        <div class="card">
-          <h3>ที่อยู่</h3>
-          <p>123/45 ถนนสุขภาพดี แขวงสีเขียว เขตวีแกน กรุงเทพฯ 10200</p>
-        </div>
-        <div class="card">
-          <h3>อีเมล</h3>
-          <p>info@PlantProtein.com</p>
-        </div>
-        <div class="card">
-          <h3>เบอร์ติดต่อ</h3>
-          <p>02-123-4567</p>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <p>&copy; 2025 Plant Protein. All rights reserved.</p>
-    </footer>
-  </body>
-</html>
